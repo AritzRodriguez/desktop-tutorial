@@ -1,0 +1,178 @@
+/* Estilo general del body */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define la fuente principal */
+    background-image: url(''); /* Espacio reservado para una imagen de fondo */
+    background-size: cover; /* La imagen de fondo cubre toda la pantalla */
+    color: #ffffff; /* Color del texto en blanco */
+    margin: 0; /* Elimina los márgenes por defecto */
+    display: flex; /* Utiliza un layout de flexbox */
+    flex-direction: column; /* Los elementos hijos se organizan en columna */
+    min-height: 100vh; /* Asegura que el body cubra al menos la altura completa de la pantalla */
+}
+
+/* Estilos del header */
+header {
+    background-color: rgba(10, 10, 30, 0.9); /* Color de fondo oscuro semi-transparente */
+    text-align: center; /* Centra el contenido dentro del header */
+    padding: 20px; /* Añade espacio interno en el header */
+}
+
+header h1 {
+    font-size: 60px; /* Tamaño grande para el título principal */
+    margin: 0; /* Elimina márgenes para que el título no tenga espacio extra */
+}
+
+header a, nav a {
+    color: #ffffff; /* Los enlaces tienen color blanco */
+    margin: 0 30px; /* Espacio horizontal de 30px entre enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* Los enlaces tienen texto en negrita */
+    font-size: 18px; /* Tamaño de fuente de 18px */
+}
+
+header a:hover {
+    color: #3498db; /* Cambia a color azul al pasar el cursor */
+}
+
+/* Contenedor principal */
+.contenedores {
+    padding: 50px; /* Añade espacio interno dentro del contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 30px auto; /* Añade margen y centra el contenedor horizontalmente */
+    width: 90%; /* El contenedor ocupa el 90% del ancho de la página */
+    flex: 1; /* El contenedor se expande para llenar el espacio disponible */
+}
+
+/* Estilos del formulario */
+form {
+    color: #000000; /* Texto negro */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con ligera transparencia */
+    padding: 100px; /* Añade espacio interno amplio */
+    border-radius: 100px; /* Bordes redondeados grandes */
+    display: inline-block; /* El formulario se comporta como un bloque en línea */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra alrededor del formulario */
+    text-align: center; /* Centra el contenido dentro del formulario */
+   
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 12px; /* Añade espacio interno */
+    margin: 10px 0; /* Margen vertical de 10px */
+    width: 100%; /* El campo ocupa el 100% del ancho del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #3498db; /* Bordes azules */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto en blanco (quizás sea un error, ya que no se vería en fondo blanco) */
+    transition: border-color 0.3s; /* Suave transición en el cambio de color del borde */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #2980b9; /* Borde azul más oscuro al enfocar */
+    outline: none; /* Elimina el borde por defecto de los inputs */
+}
+
+input[type="submit"] {
+    background-color: #3498db; /* Color de fondo azul claro */
+    border: none; /* Elimina el borde */
+    padding: 12px 20px; /* Espaciado interno amplio en el botón */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambia el cursor a puntero al pasar por el botón */
+    font-weight: bold; /* Texto del botón en negrita */
+    transition: background-color 0.3s; /* Suave transición del color de fondo al pasar el cursor */
+    color: #000000; /* Texto en negro */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el cursor por el botón */
+}
+
+/* Mensaje de bienvenida */
+#Mensagedelprincipio {
+    padding: 20px; /* Añade espacio interno al mensaje */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #ffffff; /* Texto blanco */
+    font-size: 24px; /* Tamaño grande para el mensaje de bienvenida */
+}
+
+/* Estilos del footer */
+footer {
+    background-color: rgba(10, 10, 30, 0.9); /* Fondo oscuro semi-transparente */
+    text-align: center; /* Centra el texto en el footer */
+    padding: 15px; /* Añade espacio interno */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para reducir el tamaño de las imágenes */
+img {
+    max-width: 15%; /* La imagen no supera el 15% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita que haya espacios debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Estilo para la lista de productos */
+.Listaproductos {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    display: flex; /* Usa flexbox para organizar los productos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+}
+
+.Listaproductos li {
+    margin: 10px; /* Margen alrededor de cada producto */
+    flex: 1 1 calc(30% - 20px); /* Cada producto ocupa aproximadamente el 30% del contenedor, con márgenes */
+    box-sizing: border-box; /* Incluye padding y bordes en el cálculo del ancho */
+}
+
+.Listaproductos img {
+    max-width: 100%; /* Las imágenes ocupan el 100% del ancho del contenedor del producto */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Imágenes generales */
+img {
+    width: 300px; /* Ancho fijo de 300px */
+    height: 300px; /* Altura fija de 300px */
+    object-fit: cover; /* La imagen se recorta para llenar completamente su contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+/* Logo pequeño */
+#logito img {
+    width: 100px; /* Ancho fijo para el logotipo */
+    height: auto; /* Mantiene la proporción */
+    margin: 1px; /* Margen pequeño */
+}
+
+.producto {
+    display: inline-block;
+    background-color: rgb(162, 0, 255); /* Fondo amarillo */
+    color: #000; /* Texto negro */
+    padding: 10px 15px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 10px;
+    }
+
+    #codigosdeDescuento {
+        width: 20%;
+        border-collapse: collapse;
+        margin:50px auto;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        
+    }
+    th {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    tr{
+        background-color: #333;
+    }

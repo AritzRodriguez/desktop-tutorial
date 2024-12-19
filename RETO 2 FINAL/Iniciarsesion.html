@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Indica que el documento está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva, adaptable a diferentes pantallas -->
+    <title>Iniciar Sesión</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/css.css"> <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="icon" type="image/jpg" href="Imagenes/logo.jpg"> <!-- Favicon que aparece en la pestaña del navegador -->
+    <script src="script/js.js"></script>
+</head>
+<body>
+    <!-- Sección de encabezado con el nombre y el logo de la empresa -->
+    <header>
+        <h1><a href="index.html">ENTRADERS</a></h1> <!-- Título con enlace a la página principal -->
+        <a href="index.html"> <!-- El logo también es un enlace a la página principal -->
+            <div id="logito"> <!-- Contenedor del logo -->
+                <img src="Imagenes/logo.jpg" alt="logotipo"> <!-- Imagen del logo -->
+            </div>
+        </a>
+        <!-- Barra de navegación con enlaces a otras páginas del sitio -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Producto1.html">Productos</a>
+            <a href="Soporte.html">Soporte</a>
+            <a href="carritodelacompra.html">Carrito de la compra</a>
+            <a href="Iniciarsesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal del formulario de inicio de sesión -->
+    <div class="contenedores">
+        <h2>Iniciar Sesión</h2> <!-- Título de la sección -->
+        <!-- Formulario para que el usuario inicie sesión -->
+        <form action="#" method="POST"> <!-- Formulario con método POST para enviar datos -->
+            <!-- Campo para el nombre de usuario -->
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="usernameinicio" name="username" required> <!-- Campo obligatorio para el nombre de usuario -->
+
+            <!-- Campo para la contraseña -->
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required onfocus="cambiocolo()"> <!-- Campo obligatorio para la contraseña -->
+
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" value="Iniciar Sesión" onclick="nombreuder()"> <!-- Botón que envía los datos del formulario -->
+            
+        </form>
+        <!-- Enlace para crear una nueva cuenta si el usuario no tiene una -->
+        <p>¿No tienes una cuenta? <a href="Crearcuenta.html">Crear cuenta</a></p>
+    </div>
+
+    <!-- Pie de página con derechos de autor y el eslogan de la empresa -->
+    <footer>
+        <p>&copy; Entraders. Contribuyendo a un futuro mejor, un dispositivo a la vez.</p> <!-- Texto del pie de página -->
+    </footer>
+</body>
+</html>

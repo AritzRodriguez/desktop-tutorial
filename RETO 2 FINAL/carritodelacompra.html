@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara que el documento es HTML5 y que el contenido está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Establece que el sitio será responsive, adaptándose a diferentes tamaños de pantalla -->
+    <title>Carrito de la Compra - Entraders</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/css.css"> <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="icon" type="image/jpg" href="Imagenes/logo.jpg"> <!-- Especifica el icono que aparecerá en la pestaña del navegador -->
+    <script src="script/js.js"></script>
+</head>
+<body>
+    <!-- Encabezado del sitio web -->
+    <header>
+        <h1><a href="index.html">ENTRADERS</a></h1> <!-- Título principal del sitio con un enlace a la página de inicio -->
+        <a href="index.html"> <!-- El logo también sirve como enlace a la página de inicio -->
+            <div id="logito"> <!-- Contenedor para el logo de la empresa -->
+                <img src="Imagenes/logo.jpg" alt="logotipo"> <!-- Logo de la empresa -->
+            </div>
+        </a>
+        <nav>
+            <!-- Barra de navegación con enlaces a distintas secciones del sitio -->
+            <a href="index.html">Inicio</a>
+            <a href="Producto1.html">Productos</a>
+            <a href="Soporte.html">Soporte</a>
+            <a href="carritodelacompra.html">Carrito de la compra</a> <!-- Enlace activo a la página actual del carrito -->
+            <a href="Iniciarsesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal para el carrito de la compra -->
+    <div class="contenedores">
+        <h2>Carrito de la Compra</h2> <!-- Encabezado para la sección del carrito de compra -->
+
+        <!-- Div para mostrar el total de la compra (aquí se puede implementar código JS para calcular y mostrar el precio total) -->
+        <div class="total">
+            <strong></strong> <!-- Espacio reservado para mostrar el total de la compra -->
+        </div>
+
+        <input type="submit" onmouseover="botoover()"  onmouseout="botonaut()" id="botonxd" onclick="tukutuku()" value="Finalizar compra 🛒">
+        <table id="codigosdeDescuento">
+            <thead>
+                <tr>
+                    <th>Nombre del Descuento</th>
+                    <th>Código</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Navidad</td>
+                    <td>Sorpresa</td>
+                </tr>
+                <tr>
+                    <td>Reyes</td>
+                    <td>Sorpresa</td>
+                </tr>
+                <tr>
+                    <td>Fin de año</td>
+                    <td>Sorpresa</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit"value='Sorpresa' onclick="tukatuka()">
+        <p id="ueueueu"></p>
+    </div>>
+    
+ 
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy;  Entraders. Contribuyendo a un futuro mejor, un dispositivo a la vez.</p> <!-- Derechos de autor y eslogan inspirador -->
+    </footer>
+</body>
+</html>

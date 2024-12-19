@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Indica que el documento está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+    <title>Productos</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/css.css"> <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="icon" type="image/jpg" href="Imagenes/logo.jpg"> <!-- Favicon que aparece en la pestaña del navegador -->
+    <script src="script/js.js"></script>
+</head>
+<body>
+    <!-- Sección de encabezado con el nombre y el logo de la empresa -->
+    <header>
+        <h1><a href="index.html">ENTRADERS</a></h1> <!-- Título con enlace a la página principal -->
+        <a href="index.html"> <!-- El logo también es un enlace a la página principal -->
+            <div id="logito"> <!-- Contenedor del logo -->
+                <img src="Imagenes/logo.jpg" alt="logotipo"> <!-- Imagen del logo -->
+            </div>
+        </a>
+        <!-- Barra de navegación con enlaces a otras páginas del sitio -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Producto1.html">Productos</a>
+            <a href="Soporte.html">Soporte</a>
+            <a href="carritodelacompra.html">Carrito de la compra</a>
+            <a href="Iniciarsesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal donde se muestran los productos -->
+ <form>
+    <div class="contenedores">
+        <h2>Entraders</h2> <!-- Título de la empresa -->
+        <p>Somos una empresa que repara dispositivos donados para familias necesitadas.</p> <!-- Descripción de la empresa -->
+        <h2>Productos Disponibles</h2> <!-- Título de la sección de productos -->
+        <ul class="Listaproductos"> <!-- Lista no ordenada para mostrar los productos -->
+            <!-- Producto 1 -->
+            <li>
+                <img src="Imagenes/imagen_1-removebg-preview.png" alt="Dell OptiPlex 9020"> <!-- Imagen del producto -->
+                <p><strong>Dell OptiPlex 9020</strong></p> <!-- Nombre del producto -->
+                <a class="producto" href="#" >Solicitar</a><input type="submit"value='info' onclick="producto1(event)">
+            </li>
+            <!-- Producto 2 -->
+            <li>
+                <img src="Imagenes/imagen_2-removebg-preview.png" alt="Dell Inspiron 15R"> <!-- Imagen del producto -->
+                <p><strong>Dell Inspiron 15R</strong></p> <!-- Nombre del producto -->
+                <a class="producto" href="#">Solicitar</a><input type="submit"value='info'onclick="producto2(event)">
+            </li>
+            <!-- Producto 3 -->
+            <li>
+                <img src="Imagenes/imagen_3-removebg-preview.png" alt="HP Pavilion dv6"> <!-- Imagen del producto -->
+                <p><strong>HP Pavilion dv6</strong></p> <!-- Nombre del producto -->
+                <a class="producto" href="#">Solicitar</a><input type="submit"value='info'onclick="producto3(event)">
+            </li>
+            <!-- Producto 4 -->
+            <li>
+                <img src="Imagenes/imagen_4-removebg-preview.png" alt="Lenovo ThinkPad X220"> <!-- Imagen del producto -->
+                <p><strong>Lenovo ThinkPad X220</strong></p> <!-- Nombre del producto -->
+                <a class="producto" href="#" >Solicitar</a><input type="submit"value='info'onclick="producto4(event)">
+            </li>
+        </ul>
+    </div>
+</form>
+
+    <!-- Pie de página con derechos de autor y el eslogan de la empresa -->
+    <footer>
+        <p>&copy; Entraders. Contribuyendo a un futuro mejor, un dispositivo a la vez.</p> <!-- Texto del pie de página -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Indica que el documento está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva -->
+    <title>Soporte</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="css/css.css"> <!-- Enlace a la hoja de estilos CSS externa -->
+    <link rel="icon" type="image/jpg" href="Imagenes/logo.jpg"> <!-- Favicon que aparece en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Sección de encabezado con el nombre y el logo de la empresa -->
+    <header>
+        <h1><a href="index.html">ENTRADERS</a></h1> <!-- Título con enlace a la página principal -->
+        <a href="index.html"> <!-- El logo también es un enlace a la página principal -->
+            <div id="logito"> <!-- Contenedor del logo -->
+                <img src="Imagenes/logo.jpg " alt="logotipo"> <!-- Imagen del logo -->
+            </div>
+        </a>
+        <!-- Barra de navegación con enlaces a otras páginas del sitio -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Producto1.html">Productos</a>
+            <a href="Soporte.html">Soporte</a>
+            <a href="carritodelacompra.html">Carrito de la compra</a>
+            <a href="Iniciarsesion.html">Iniciar Sesión</a>
+            <a href="donaciones.html">Donaciones</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal donde se encuentra el formulario de soporte -->
+    <div class="contenedores">
+        <h2>Formulario de Soporte</h2> <!-- Título de la sección de soporte -->
+        <form action="#" method="POST"> <!-- Formulario para enviar información de soporte -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required> <!-- Campo para el nombre, requerido -->
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required> <!-- Campo para el correo electrónico, requerido -->
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea> <!-- Campo de texto para el mensaje, requerido -->
+
+            <input type="submit" value="Enviar" onclick="sevieneconst()"> <!-- Botón para enviar el formulario -->
+            <div id="Saludito"></div>
+        </form>
+
+        <h3>¿Necesitas más ayuda?</h3> <!-- Subtítulo para ayuda adicional -->
+        <p>Visita nuestra <a class="linkayuda" href="https://youtube.com/shorts/t-k0MU_XdrE?si=wtUVD8GHBOXGjzp8" target="_blank">página de ayuda</a> para obtener más información.</p> <!-- Enlace a la página de ayuda -->
+    </div>
+
+    <!-- Pie de página con derechos de autor y el eslogan de la empresa -->
+    <footer>
+        <p>&copy; Entraders. Contribuyendo a un futuro mejor, un dispositivo a la vez.</p> <!-- Texto del pie de página -->
+    </footer>
+</body>
+</html>
